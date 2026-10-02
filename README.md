@@ -1,152 +1,368 @@
 Sistem Informasi Bantuan Masyarakat
 
-Sistem Informasi Bantuan Masyarakat merupakan aplikasi berbasis web yang dibuat untuk membantu proses pendataan masyarakat dan penerima bantuan. Aplikasi ini dibuat menggunakan PHP dan MySQL serta dijalankan menggunakan XAMPP pada tahap pengembangan.
+
+
+Sistem Informasi Bantuan Masyarakat merupakan aplikasi berbasis web yang dibuat untuk membantu proses pendataan masyarakat dan penerima bantuan. Aplikasi ini menggunakan PHP dan MySQL serta dikembangkan menggunakan XAMPP sebagai local server.
+
+
 
 Project ini dibuat sebagai bagian dari pembelajaran dan pengembangan aplikasi berbasis web.
 
+
+
 Fitur
+
+
 
 Login administrator
 
+
+
 Pengelolaan data penduduk
+
+
 
 Menambahkan data penduduk
 
+
+
 Mengubah data penduduk
+
+
 
 Pengelolaan data penerima bantuan
 
+
+
 Menampilkan data bantuan
+
+
 
 Pembuatan laporan
 
+
+
 Cetak laporan dalam format PDF
+
+
 
 Teknologi
 
+
+
 PHP
+
+
 
 MySQL
 
+
+
 HTML
+
+
 
 CSS
 
+
+
 JavaScript
+
+
 
 Bootstrap
 
+
+
 FPDF
+
+
 
 XAMPP
 
+
+
 Git
+
+
 
 Struktur Project
 
+
+
 Beberapa file dan folder utama dalam project ini:
 
+
+
 sistem-bantuan-masyarakat/
+
 ├── assets/
+
 ├── fpdf/
+
 ├── administrator.php
+
 ├── index.php
+
 ├── login.php
+
 ├── logout.php
+
 ├── koneksi.php
+
 ├── penduduk.php
+
 ├── tambahpenduduk.php
+
 ├── editpenduduk.php
+
 ├── penerimabantuan.php
+
 ├── laporan.php
+
 ├── cetaklaporan1.php
+
 ├── bansos.sql
+
 └── README.md
+
+
 
 Menjalankan Project
 
+
+
 Project ini menggunakan XAMPP sebagai local server.
 
-1. Menempatkan Project
+
+
+1\. Menempatkan Project
+
+
 
 Salin folder project ke dalam:
 
-C:\xampp\htdocs\
+
+
+C:\\xampp\\htdocs\\
+
+
+
 
 
 Contohnya:
 
-C:\xampp\htdocs\sistem-bantuan-masyarakat fiks
 
-2. Menjalankan XAMPP
+
+C:\\xampp\\htdocs\\sistem-bantuan-masyarakat fiks
+
+
+
+2\. Menjalankan XAMPP
+
+
 
 Buka XAMPP Control Panel kemudian jalankan:
 
+
+
 Apache
+
+
 
 MySQL
 
-3. Membuat Database
+
+
+3\. Membuat Database
+
+
 
 Buka phpMyAdmin melalui:
+
+
 
 http://localhost/phpmyadmin
 
 
+
+
+
 Buat database dengan nama:
+
+
 
 bansos
 
 
+
+
+
 Kemudian import file:
+
+
 
 bansos.sql
 
-4. Mengecek Koneksi Database
+
+
+4\. Mengecek Koneksi Database
+
+
 
 Konfigurasi database terdapat pada file:
+
+
 
 koneksi.php
 
 
+
+
+
 Konfigurasi yang digunakan pada pengembangan lokal:
 
+
+
 $host = "localhost";
+
 $user = "root";
+
 $password = "";
+
 $database = "bansos";
 
-5. Membuka Aplikasi
+
+
+5\. Membuka Aplikasi
+
+
 
 Setelah Apache dan MySQL aktif, buka browser dan akses:
 
+
+
 http://localhost/sistem-bantuan-masyarakat%20fiks/
+
+
+
+Tampilan Aplikasi
+
+
+
+Berikut merupakan beberapa tampilan dari aplikasi yang telah dibuat.
+
+
+
+Halaman Login
+
+
+
+Halaman login digunakan untuk membatasi akses ke dalam sistem sebelum pengguna masuk ke halaman administrator.
+
+
+
+Dashboard
+
+
+
+Dashboard digunakan sebagai halaman utama setelah administrator berhasil login.
+
+
+
+Screenshot dashboard dapat ditambahkan pada bagian ini.
+
+
+
+Data Penduduk
+
+
+
+Halaman ini digunakan untuk melihat dan mengelola data penduduk yang terdapat di dalam sistem.
+
+
+
+Screenshot data penduduk dapat ditambahkan pada bagian ini.
+
+
+
+Data Penerima Bantuan
+
+
+
+Halaman ini digunakan untuk mengelola data masyarakat yang tercatat sebagai penerima bantuan.
+
+
+
+Screenshot penerima bantuan dapat ditambahkan pada bagian ini.
+
+
+
+Laporan
+
+
+
+Halaman laporan digunakan untuk melihat data dan mencetak laporan dalam format PDF.
+
+
+
+Screenshot laporan dapat ditambahkan pada bagian ini.
+
+
 
 Database
 
+
+
 File bansos.sql disertakan dalam repository untuk memudahkan proses setup database pada lingkungan pengembangan.
+
+
 
 Data yang terdapat di dalam database repository merupakan data dummy yang digunakan untuk kebutuhan pengujian aplikasi.
 
+
+
 Pengembangan
+
+
 
 Beberapa hal yang masih dapat dikembangkan dari aplikasi ini antara lain:
 
+
+
 Perbaikan keamanan autentikasi
+
+
 
 Validasi input yang lebih lengkap
 
+
+
 Pengaturan hak akses pengguna
+
+
 
 Peningkatan tampilan dashboard
 
+
+
 Pencarian dan filter data
+
+
 
 Pengembangan fitur laporan
 
+
+
 Author
+
+
 
 Micko Adrian
 
+
+
 GitHub:
-https://github.com/mickoadrian# 
+
+https://github.com/mickoadrian
+
